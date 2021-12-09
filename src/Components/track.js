@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Movies from "./movies";
+import Music from "./music";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card } from "react-bootstrap";
 
-class MovieItem extends Component {
+class Track extends Component {
   render() {
     return (
       <div>
@@ -11,11 +11,11 @@ class MovieItem extends Component {
           <Card.Header>Quote</Card.Header>
           <Card.Body>
             <blockquote className="blockquote mb-0">
-              <h3>{this.props.movie.Title}</h3>
-              <img src={this.props.movie.Poster}></img>
-              <p>{this.props.movie.Year}</p>
+              <h3>{this.props.song.Name}</h3>
+              <img src={this.props.song.Artwork}></img>
+              <p>{this.props.song.ReleaseDate}</p>
               <footer className="blockquote-footer">
-                All rights reserved <cite title="Source Title">Marvel Studios</cite>
+                All rights reserved <cite title="Source Title">spotify</cite>
               </footer>
             </blockquote>
           </Card.Body>
@@ -24,4 +24,4 @@ class MovieItem extends Component {
     );
   }
 }
-export default MovieItem;
+export default Track;
