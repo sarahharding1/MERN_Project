@@ -17,7 +17,7 @@ class Read extends Component{
         render(){
             return(
                 <div>
-                    <h1>Read Component is in here</h1>
+                    <h1>Read Component in here</h1>
                     <Music songs={this.state.mymusic}></Music>
                 </div>
             );
